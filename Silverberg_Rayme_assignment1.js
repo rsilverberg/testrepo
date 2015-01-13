@@ -1,34 +1,51 @@
-//alert("JavaScript works!");
+//You know how many loops
 
-// Rayme Silverberg
-// 02MDVB
-// Project 1
+for(i = 0; i < 10; i++){
+    console.log(i)
+}
 
-// My variables
-var myGreeting = "Welcome!"; 
-var myPhotoshoot = prompt ("Please enter shooting location", "");
-var myClient = prompt("Please enter your name","");
-var confirmingService = true
-var numServices = 3;
-var typeOfService1 = "Photography";
-var typeOfService2 = "Photo Editing";
-var typeOfService3 = "Graphic Arts";
 
-// my outputs
+//Don't know how manu loops
+var testVariable = 0;
 
-console.log("I will meet the client at" + myClient + "at"+ myPhotoshoot + ".");
-console.log("It is" + confirmingService + "that" + myClient + "wants" + numServices);
-console.log ("The services desired are" + typeOfService1 + "," + typeOfService2 + ", and" + typeOfService3 + ".");
+while (testVariable <= 10){
+    alert("Test variable is "+ testVariable);
+    testVariable++;
+    if (testVariable === 10) {
+        alert("Last Loop");
+    }
+}
 
-// my conditionals
-if (confirmingService === true) {
-    //this is what runs if condition is true
-    console.log("We will move forward with a succesful photoshoot, with quality services!");
-} else {
-    // this runs if condition first condition is false.
-    console.log("I'm flexible and willing to perform any of my services a'la carte.");
-    
-} else {
-    // this is what runs if both conditions above are false
-    console.log("I hope to work with you soon! Please feel free to contact me, should my services be needed".);
-    
+var degrees = 60
+
+while (degrees <= 100){
+    alert("Test variable is "+ testVariable);
+    testVariable++;
+    if (testVariable === 10) {
+        alert("Last Loop");
+    }
+}
+
+//Relying on something being true
+var userAge;
+
+do
+{
+    userAge = prompt("Please enter your age", ""); 
+}
+
+while(isNaN(userAge) == true);
+
+// function
+
+var helloWorld = function(){
+    console.log("Hello World!");
+}
+
+var addOne = function(number){
+    console.log(number + 1);
+}
+
+addOne(1);
+
+helloWorld();
